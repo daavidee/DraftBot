@@ -98,9 +98,7 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 	</tr>
 </table>
 
-
-			
-<h2>Admin Commands</h2>
+<br><h2>Admin Commands</h2>
 <table>
 	<tr><th>Command Syntax</th><th>Description</th></tr>
 	<tr>
