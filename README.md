@@ -41,7 +41,7 @@ After joining the IRC server and channel of choice (preferably with unrestricted
 <h1>Command List</h1>
 Command prefixes are <b>! and . only</b>. All OPs in the channel have access to all admin commands.
 
-<h2>Basic Commands</h2>
+<br><h2>Basic Commands</h2>
 <table>
 	<tr><th>Command Syntax</th><th>Description</th></tr>
 	<tr>
