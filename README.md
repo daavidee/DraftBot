@@ -97,6 +97,8 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 		<td>Returns version and author (me!).</td>
 	</tr>
 </table>
+
+
 			
 <h2>Admin Commands</h2>
 <table>
