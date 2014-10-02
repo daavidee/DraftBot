@@ -143,6 +143,6 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 	</tr>
 	<tr>
 		<td>.rounds &lt;round1,round2,rounds3&gt;</td>
-		<td>A comma-delimited list of the roundcaps. Each number represents the amount of money unavailable to the captain for that round. For example: .rounds 5000,4000,3500,0 translates to) $5000-$4000=$1000 for the first round (captains are bought here), ($4000-$3500)=$500 added to each captain balance for the second round and ($3500-0)=$3500 added to each captain balance for the last round. In this fictitious example there are 3 rounds. Since captains are automatically bought in the first round, there are only two picking rounds. In total there are 3 players per team.</td>
+		<td>A comma-delimited list of the roundcaps. Each number represents the amount of money unavailable to the captain for that round. For example: .rounds 5000,4000,3500,0 translates to ($5000-$4000)=$1000 for the first round (captains are bought here), ($4000-$3500)=$500 added to each captain balance for the second round and ($3500-0)=$3500 added to each captain balance for the last round. In this fictitious example there are 3 rounds. Since captains are automatically bought in the first round, there are only two picking rounds. In total there are 3 players per team.</td>
 	</tr>
 </table>
