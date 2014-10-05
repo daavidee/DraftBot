@@ -25,18 +25,6 @@ A number of players volunteer to captain a team (typically 12-20 teams of 8 or m
 	<li>Type /load -rs draftbot.mrc in the server window</li>
 	<li>Load up your IRC server of choice, join a channel and type: .setdraft on. <b> NOTE:</b> This bot works best on a network where it can be given the +B flag or similar permissions. If not, mIRC flood rules need to be enabled or the bot may be kicked for flooding</li>
 </ol>
-<h1>Example Usage</h1>
-After joining the IRC server and channel of choice (preferably with unrestricted flood controls) the commands below are the bare minimum to get started:
-<ol>
-<li>.setdraft on</li>
-<li>.fullreset</li>
-<li>.makelist</li>
-<li>.rounds 5100,4100,3100,2713,2326,1939,1552,1165,778,391,0</li>
-<li>.captain irc_nick1 list_nick1</li>
-<li>.captain irc_nick2 list_nick2</li>
-<li>.captain irc_nick3 list_nick3</li>
-<li>.startdraft</li>
-</ol>
 
 <h1>Command List</h1>
 Command prefixes are <b>! and . only</b>. All OPs in the channel have access to all admin commands.
@@ -103,7 +91,7 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 	<tr><th>Command Syntax</th><th>Description</th></tr>
 	<tr>
 		<td>.setdraft &lt;on | off&gt;</td>
-		<td>Will turn on the bot to respond to commands in the channel it was typed.</td>
+		<td>Will turn on the bot to respond to commands in the channel it was typed. Needs to be done on the mIRC running the script.</td>
 	</tr>
 	<tr>
 		<td>.captain &lt;irc_nick&gt; &lt;list_nick&gt;</td>
@@ -135,7 +123,7 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 	</tr>
 	<tr>
 		<td>.makelist</td>
-		<td>Will attempt to import the player list. Outputs the full list of players to r2.txt.</td>
+		<td>Will attempt to import the player list from rankings.txt (A space delimited list of the players and their rank value, i.e.e from 100-1000). Outputs the full list of players to r2.txt.</td>
 	</tr>
 	<tr>
 		<td>.players &lt;number&gt;</td>
@@ -146,3 +134,18 @@ Command prefixes are <b>! and . only</b>. All OPs in the channel have access to 
 		<td>A comma-delimited list of the roundcaps. Each number represents the amount of money unavailable to the captain for that round. For example: .rounds 5000,4000,3500,0 translates to ($5000-$4000)=$1000 for the first round (captains are bought here), ($4000-$3500)=$500 added to each captain balance for the second round and ($3500-0)=$3500 added to each captain balance for the last round. In this fictitious example there are 3 rounds. Since captains are automatically bought in the first round, there are only two picking rounds. In total there are 3 players per team.</td>
 	</tr>
 </table>
+
+<h1>Example Usage</h1>
+After joining the IRC server and channel of choice (preferably with unrestricted flood controls) the commands below are the bare minimum to get started (after creating the rankings.txt file):
+<ol>
+<li>.setdraft on</li>
+<li>.fullreset</li>
+<li>.makelist</li>
+<li>.rounds 5100,4100,3100,2713,2326,1939,1552,1165,778,391,0</li>
+<li>.captain irc_nick1 list_nick1</li>
+<li>.captain irc_nick2 list_nick2</li>
+<li>.captain irc_nick3 list_nick3</li>
+<li>.startdraft</li>
+</ol>
+
+Please read the full command list to understand any requirements or alternatives for each command.
